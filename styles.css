@@ -9,20 +9,53 @@
   font-stretch: 25% 151%;
 }
 
+@font-face {
+  font-family: 'Outfit Light';
+  src: url(fonts/Outfit-Light.ttf) format('truetype') tech('variations'),
+       url(fonts/Outfit-Light.ttf) format('truetype-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+
 .quote {
-  padding-top: 50px;
+  padding-top: 25px;
   display: table;
   font-family: 'Outfit Bold';
   text-align: center;
+  font-weight:700;
   margin: 0 auto;
+  overflow-wrap: break-word;
+}
+
+.copy {
+  padding-top: 25px;
+  display: table;
+  font-family: 'Outfit Light';
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  color: hsl(220, 15%, 55%);
+}
+
+.reset-paragraph {
+  margin: 0px;
 }
 
 body {
   text-align: center;
   margin: 0 auto;
   width: 375px;
+  background-color: hsl(212, 45%, 89%);
 }
 
 .mainImage {
   border-radius: 25px;
+  border-color: #FFF;
+  border-width: 25px;
+  width: 375px;
 }
+
+.box { display:inline-block; line-height: 0; border-radius: 25px; height: 100%;   background-color: #FFF;
+}
+.box, .box:before { border: 25px solid #fff; border-radius: 25px;  position: relative; z-index: 1; }
+.box:before { display: block; position: absolute; top: -25px; left: -25px; right: -25px; bottom: -25px; z-index: 2; }
